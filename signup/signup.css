@@ -1,0 +1,316 @@
+#whole{
+    background-color:rgb(230, 230, 230);
+   
+    font-family: "DM Sans", sans-serif;
+}
+
+.carousel-inner{
+    background-color: white;
+     border-radius: 15px;
+}
+
+
+#logo-om{
+    position: relative;
+    top: 20px;
+      
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+#signupbox{
+    width: 390px;
+    height: auto;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0px 12px;
+    padding: 20px;
+    
+}
+
+#email{
+    border: 2px solid rgb(18,18,18);
+    color:rgb(18,18,18) ;
+    width: 324px;
+    height: 48px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+
+#email:hover{
+    border: 2px solid white; ;
+}
+
+#submitbut{
+    
+    color:black;
+    width: 324px;
+    height: 48px;
+    border-radius: 20px;
+    background-color:rgb(30,215,96);
+    border: 0px;
+    display: block;
+    cursor: pointer;
+
+}
+#submitbut2{
+    
+    color:black;
+    width: 324px;
+    height: 48px;
+    border-radius: 20px;
+    background-color:rgb(30,215,96);
+    border: 0px;
+    display: block;
+    cursor: pointer;
+
+}
+
+#submitbut3{
+    
+    color:black;
+    width: 324px;
+    height: 48px;
+    border-radius: 20px;
+    background-color:rgb(30,215,96);
+    border: 0px;
+    display: block;
+    cursor: pointer;
+
+}
+
+#thro{
+    color:white;
+    width: 324px;
+    height: 48px;
+    border-radius: 20px;
+    background-color:rgb(18,18,18);
+    border: 0px;
+    display: block;
+    border: 2px solid rgb(167,167,167);
+    text-align: center;
+    
+}
+#thro2{
+    color:white;
+    width: 324px;
+    height: 48px;
+    border-radius: 20px;
+    background-color:rgb(18,18,18);
+    border: 0px;
+    display: block;
+    border: 2px solid rgb(167,167,167);
+    text-align: center;
+    
+}
+#thro3{
+    color:white;
+    width: 324px;
+    height: 48px;
+    border-radius: 20px;
+    background-color:rgb(18,18,18);
+    border: 0px;
+    display: block;
+    border: 2px solid rgb(167,167,167);
+    text-align: center;
+    
+}
+
+#thro>b{
+    position: relative;
+    bottom: 11px;
+    font-size: 14px;
+}
+
+
+
+#signupbox-2{
+    width: 388px;
+    height: 600px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0px 12px;
+   
+}
+
+#prev{
+    padding: 10px;
+    background-color:white ;
+    border-radius: 50%;
+    color:black;
+    border: 0px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#prev2{
+    padding: 10px;
+    background-color:white ;
+    border-radius: 50%;
+    color:black;
+    border: 0px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#prev3{
+    padding: 10px;
+    background-color:white;
+    border-radius: 50%;
+    color:black;
+    border: 0px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.prevgrid>p{
+    display: inline;
+    position: relative;
+    bottom: 15px;
+    color: black;
+    
+    
+}
+
+.prevgrid>p:nth-of-type(2){
+    display: inline;
+    position: relative;
+    bottom: 18px;
+    left: 38px;
+    color: black;
+    
+    
+}
+
+.prevgrid>p:nth-of-type(1){
+    color: black;
+    
+}
+
+#password{
+    border: 2px solid black;
+    color:black ;
+    width: 324px;
+    height: 48px;
+    border-radius: 7px;
+    background-color: white;
+
+}
+#password:hover{
+    border: 2px solid white; ;
+}
+
+#signupbox-3{
+
+    width: 388px;
+    height: auto;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0px 12px;
+    color: black;
+}
+
+#name{
+    border: 2px solid black;
+    color:black ;
+    width: 324px;
+    height: 48px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+#name:hover{
+    border: 2px solid white; ;
+}
+
+#year{
+    border: black;
+    color:black ;
+    width: 93.1px;
+    height: 48px;
+    border-radius: 7px;
+    background-color: white;
+    text-align: center;
+}
+#year:hover{
+    border: 2px solid white; ;
+}
+
+#month{
+    border: 2px solid black;
+    color:black ;
+    width: 152.26px;
+    height: 48px;
+    border-radius: 7px;
+    background-color: white;
+    text-align: center;   
+}
+#month:hover{
+    border: 2px solid white; ;
+}
+
+#date{
+    border: 2px solid black;
+    color:black ;
+    width: 62.26px;
+    height: 48px;
+    border-radius: 7px;
+    background-color: white;
+    text-align: center;   
+}
+#date:hover{
+    border: 2px solid white; ;
+}
+
+#gendertype{
+    border: 2px solid black;
+    color:black;
+    width: 324px;
+    height: 48px;
+    border-radius: 7px;
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.slide{
+    width: 388px;
+    height: auto;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0px 12px;   
+}
+
+.Tc{
+   
+    color: black;
+    width: 324px;
+    height: 75.2px;
+    border-radius: 7px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 0px;
+    font-size: 14px;
+    display: flex;
+    column-gap: 10px;
+    
+    
+   }
+
+   #Signupbut{
+    color:black;
+    width: 324px;
+    height: 48px;
+    border-radius: 20px;
+    background-color:rgb(30,215,96);
+    border: 0px;
+    display: block;
+    cursor: pointer;
+   }
+
+   
