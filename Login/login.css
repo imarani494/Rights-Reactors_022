@@ -1,0 +1,47 @@
+#container{
+    width: 390px;
+    height: auto;
+   
+    padding: 30px 40px;
+    margin: auto;
+    position: relative;
+    top: 140px;
+    border-radius: 13px;
+    background-color: white;
+}
+
+body{
+    background-color: #111727;
+    font-family: "DM Sans", sans-serif;
+}
+
+#password{
+    width: 340px;
+    padding: 15px 10px;
+    border-radius: 13px;
+    font-size: 15px;
+    
+}
+#email{
+    width: 340px;
+    padding: 15px 10px;
+    border-radius: 13px;
+    font-size: 15px;
+}
+
+#submit{
+    padding: 15px 34px;
+    border-radius: 12px;
+    background-color: #111727;
+    color: white;
+    border: 0px;
+}
+
+#submit:hover{
+    background-color:rgb(30, 30, 56);
+}
+
+#checkar{
+    display: flex;
+    justify-content: space-between;
+}
