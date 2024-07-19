@@ -233,7 +233,70 @@ vol.addEventListener('change', ()=>{
     vol_bar.style.width = `${vol_a}%`;
     vol_dot.style.left = `${vol_a}%`;
     music.volume = vol_a/100;
+
+
+    // Get the sign-up button element
+const signupButton = document.getElementById('signupButton');
+
+// Add click event listener to the sign-up button
+signupButton.addEventListener('click', function() {
+    // Redirect to the sign-up page
+    window.location.href = './sign up/signup.html';
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Step 1: Simulate fetching songs data
+    function fetchSongsData(artist) {
+        // Example song data
+        const songsData = {
+            "Arjit Singh": [
+                { title: "Tum Hi Ho", duration: "4:22" },
+                { title: "Channa Mereya", duration: "5:10" },
+                { title: "Raabta", duration: "4:10" }
+            ],
+            // Add more artists and songs as needed
+        };
+        return songsData[artist] || [];
+    }
+
+    // Step 2: Render songs in the HTML
+    function renderSongs(songs) {
+        const songsList = document.getElementById('songs-list');
+        songsList.innerHTML = ''; // Clear any existing songs
+
+        if (songs.length === 0) {
+            songsList.innerHTML = '<p>No songs found for this artist.</p>';
+            return;
+        }
+
+        songs.forEach(song => {
+            const songDiv = document.createElement('div');
+            songDiv.className = 'song';
+            songDiv.innerHTML = `<strong>${song.title}</strong> - ${song.duration}`;
+            songsList.appendChild(songDiv);
+        });
+    }
+
+    // Step 3: Handle artist click event
+    function handleArtistClick(event) {
+        const artist = event.currentTarget.getAttribute('data-artist');
+        if (artist) {
+            document.getElementById('artist-name').textContent = artist;
+            const songs = fetchSongsData(artist);
+            renderSongs(songs);
+        }
+    }
+
+    // Step 4: Add event listeners to artist elements
+    const artistElements = document.querySelectorAll('.artist');
+    artistElements.forEach(artistElement => {
+        artistElement.addEventListener('click', handleArtistClick);
+    });
+});
+
+
 })
+
 // Rutvik End
 // manish
 let back = document.getElementById('back');
