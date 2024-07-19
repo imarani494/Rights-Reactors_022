@@ -27,7 +27,7 @@ function addData (event){
   headers: {
     "Content-Type": "application/json",
       },
-  body:JSON.stringify(obj), // body data type must match "Content-Type" header
+  body:JSON.stringify(obj), 
 })
   
 }
@@ -57,21 +57,21 @@ password.addEventListener("input", function() {
 });
 
 function checkpassword(password) {
-  // Check for at least one letter
+  
   if (/[a-zA-Z]/.test(password)) {
       svg1.setAttribute("fill", "green");
   } else {
       svg1.setAttribute("fill", "none");
   }
   
-  // Check for at least one number or special character
+  
   if (/[0-9!@#\$%\^\&*\)\(+=._-]+/.test(password)) {
       svg2.setAttribute("fill", "green");
   } else {
       svg2.setAttribute("fill", "none");
   }
 
-  // Check if the password is at least 10 characters long
+  
   if (password.length >= 10) {
       svg3.setAttribute("fill", "green");
   } else {

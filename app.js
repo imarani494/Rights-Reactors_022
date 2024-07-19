@@ -1,3 +1,5 @@
+
+// Rutvik start
 const music = new Audio('vande.mp3');
 
 // create Array 
@@ -234,8 +236,10 @@ vol.addEventListener('change', ()=>{
     vol_dot.style.left = `${vol_a}%`;
     music.volume = vol_a/100;
 })
-// Rutvik End
-// manish
+
+// Rutvik end
+// Manish start
+
 let back = document.getElementById('back');
 let next = document.getElementById('next');
 
@@ -312,4 +316,35 @@ left_scrolls.addEventListener('click', ()=>{
 right_scrolls.addEventListener('click', ()=>{
     item.scrollLeft += 330;
 })
-// manish
+// Manish end 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadPlaylists();
+});
+
+function addToPlaylist(song) {
+    let playlists = JSON.parse(localStorage.getItem("playlists")) || [];
+    playlists.push(song);
+    localStorage.setItem("playlists", JSON.stringify(playlists));
+    loadPlaylists();
+}
+
+function loadPlaylists() {
+    const playlistsContainer = document.getElementById("playlists-container");
+    playlistsContainer.innerHTML = "";
+    let playlists = JSON.parse(localStorage.getItem("playlists")) || [];
+    playlists.forEach((song, index) => {
+        const playlistItem = document.createElement("div");
+        playlistItem.className = "playlist-item";
+        playlistItem.innerHTML = `<span>${song}</span> <button onclick="removeFromPlaylist(${index})">Remove</button>`;
+        playlistsContainer.appendChild(playlistItem);
+    });
+}
+
+function removeFromPlaylist(index) {
+    let playlists = JSON.parse(localStorage.getItem("playlists")) || [];
+    playlists.splice(index, 1);
+    localStorage.setItem("playlists", JSON.stringify(playlists));
+    loadPlaylists();
+}
