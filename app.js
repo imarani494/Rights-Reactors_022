@@ -1,3 +1,4 @@
+
 const music = new Audio('vande.mp3');
 
 // create Array 
@@ -235,6 +236,7 @@ vol.addEventListener('change', ()=>{
     music.volume = vol_a/100;
 
 
+
     // Get the sign-up button element
 const signupButton = document.getElementById('signupButton');
 
@@ -296,6 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 })
+
 
 // Rutvik End
 // manish
@@ -375,4 +378,3 @@ left_scrolls.addEventListener('click', ()=>{
 right_scrolls.addEventListener('click', ()=>{
     item.scrollLeft += 330;
 })
-// manish
