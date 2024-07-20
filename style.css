@@ -602,3 +602,20 @@ header .song_side .popular_artists .item li img{
  border-radius: 50%;
  position: absolute;
 }
+
+/* manishday4 */
+#searchpart{
+    position: relative;
+    width: 600px;
+  }
+  header .song_side nav .search{
+    display: flex;
+  }
+  .results {
+    position: absolute;
+    background-color: rgba(68, 68, 68, 0.625);
+    width: 200px;
+    left: 30px;
+    border-radius: 5px;
+  }
+/* manishday4 */

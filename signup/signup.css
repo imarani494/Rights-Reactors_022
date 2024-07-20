@@ -1,6 +1,5 @@
 #whole{
-    background-color:rgb(230, 230, 230);
-   
+    background-color: #111727;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -41,17 +40,15 @@ header{
 }
 
 
-#email:hover{
-    border: 2px solid white; ;
-}
+
 
 #submitbut{
     
-    color:black;
+    color:white;
     width: 324px;
     height: 48px;
     border-radius: 20px;
-    background-color:rgb(30,215,96);
+    background-color:#090f1f;
     border: 0px;
     display: block;
     cursor: pointer;
@@ -59,11 +56,11 @@ header{
 }
 #submitbut2{
     
-    color:black;
+    color:white;
     width: 324px;
     height: 48px;
     border-radius: 20px;
-    background-color:rgb(30,215,96);
+    background-color:#090f1f;
     border: 0px;
     display: block;
     cursor: pointer;
@@ -72,53 +69,18 @@ header{
 
 #submitbut3{
     
-    color:black;
+    color:white;
     width: 324px;
     height: 48px;
     border-radius: 20px;
-    background-color:rgb(30,215,96);
+    background-color:#090f1f;
     border: 0px;
     display: block;
     cursor: pointer;
 
 }
 
-#thro{
-    color:white;
-    width: 324px;
-    height: 48px;
-    border-radius: 20px;
-    background-color:rgb(18,18,18);
-    border: 0px;
-    display: block;
-    border: 2px solid rgb(167,167,167);
-    text-align: center;
-    
-}
-#thro2{
-    color:white;
-    width: 324px;
-    height: 48px;
-    border-radius: 20px;
-    background-color:rgb(18,18,18);
-    border: 0px;
-    display: block;
-    border: 2px solid rgb(167,167,167);
-    text-align: center;
-    
-}
-#thro3{
-    color:white;
-    width: 324px;
-    height: 48px;
-    border-radius: 20px;
-    background-color:rgb(18,18,18);
-    border: 0px;
-    display: block;
-    border: 2px solid rgb(167,167,167);
-    text-align: center;
-    
-}
+
 
 #thro>b{
     position: relative;
@@ -129,8 +91,8 @@ header{
 
 
 #signupbox-2{
-    width: 388px;
-    height: 600px;
+    width: 392px;
+    height: auto;
     margin: auto;
     box-sizing: border-box;
     padding: 0px 12px;
@@ -200,9 +162,6 @@ header{
     background-color: white;
 
 }
-#password:hover{
-    border: 2px solid white; ;
-}
 
 #signupbox-3{
 
@@ -223,12 +182,10 @@ header{
     background-color: white;
 }
 
-#name:hover{
-    border: 2px solid white; ;
-}
+
 
 #year{
-    border: black;
+    border:2px solid black;
     color:black ;
     width: 93.1px;
     height: 48px;
@@ -236,9 +193,7 @@ header{
     background-color: white;
     text-align: center;
 }
-#year:hover{
-    border: 2px solid white; ;
-}
+
 
 #month{
     border: 2px solid black;
@@ -249,9 +204,7 @@ header{
     background-color: white;
     text-align: center;   
 }
-#month:hover{
-    border: 2px solid white; ;
-}
+
 
 #date{
     border: 2px solid black;
@@ -262,9 +215,7 @@ header{
     background-color: white;
     text-align: center;   
 }
-#date:hover{
-    border: 2px solid white; ;
-}
+
 
 #gendertype{
     border: 2px solid black;
@@ -303,11 +254,11 @@ header{
    }
 
    #Signupbut{
-    color:black;
+    color:white;
     width: 324px;
     height: 48px;
     border-radius: 20px;
-    background-color:rgb(30,215,96);
+    background-color:#090f1f;
     border: 0px;
     display: block;
     cursor: pointer;

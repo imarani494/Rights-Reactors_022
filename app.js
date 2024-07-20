@@ -236,13 +236,19 @@ vol.addEventListener('change', ()=>{
 
 
     // Get the sign-up button element
-const signupButton = document.getElementById('signupButton');
+// const signupButton = document.getElementById('signupButton');
 
-// Add click event listener to the sign-up button
-signupButton.addEventListener('click', function() {
-    // Redirect to the sign-up page
-    window.location.href = './sign up/signup.html';
-});
+// // Add click event listener to the sign-up button
+// signupButton.addEventListener('click', function() {
+//     // Redirect to the sign-up page
+//     window.location.href = './sign_up/signup.html';
+// });
+
+// const loginbut = document.getElementById('Loginbut');
+// loginbut.addEventListener('click', function() {
+   
+//     window.location.href = './Login/login.html';
+// });
 
 document.addEventListener('DOMContentLoaded', () => {
     // Step 1: Simulate fetching songs data
@@ -298,3 +304,54 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // Rutvik End
+// <!-- manish day4 -->
+const API_URL = "http://localhost:3000/songs";
+const searchInput = document.getElementById("search-input");
+const resultsContainer = document.getElementById("results");
+let debounceTimeout;
+searchInput.addEventListener("input", () => {
+  clearTimeout(debounceTimeout);
+  debounceTimeout = setTimeout(() => {
+    const query = searchInput.value.trim().toLowerCase();
+    if (query) {
+      fetchSongs(query);
+    } else {
+      resultsContainer.innerHTML = "";
+      songDetailsContainer.innerHTML = "";
+    }
+  }, 500);
+});
+async function fetchSongs(query) {
+  try {
+    const response = await fetch(API_URL);
+    const data = await response.json();
+    const filteredSongs = data.filter((song) =>
+      song.name.toLowerCase().includes(query)
+    );
+    if (filteredSongs.length > 0) {
+      displayResults(filteredSongs);
+    } else {
+      resultsContainer.innerHTML = `<p>No songs found</p>`;
+    }
+  } catch (error) {
+    resultsContainer.innerHTML = `<p>Error fetching data</p>`;
+  }
+}
+function displayResults(songs) {
+    resultsContainer.innerHTML = "";
+    songs.forEach((song) => {
+      const songDiv = document.createElement("div");
+      songDiv.classList.add("song-title");
+      songDiv.style.cursor = "pointer";
+      songDiv.textContent = song.name;
+      songDiv.addEventListener("click", () => {
+        //put the song display function
+        resultsContainer.innerHTML = "";
+        alert(`${song.name} selected`);
+      });
+      resultsContainer.appendChild(songDiv);
+    });
+  }
+  
+  
+// <!-- manish day4 -->

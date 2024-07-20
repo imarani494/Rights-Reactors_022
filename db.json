@@ -9,7 +9,8 @@
       "category": "New Viral Songs 2024",
       "duration": "3:54",
       "genre": "Unknown",
-      "songurl": "./songs/O Mahi O Mahi.mp3"
+      "songurl": "./songs/O Mahi O Mahi.mp3",
+      "id": "64ef"
     },
     {
       "name": "Soulmate",
@@ -20,7 +21,8 @@
       "category": "Ek Tha Raja (2024)",
       "duration": "3:34",
       "genre": "Unknown",
-      "songurl": "./songs/Soulmate.mp3"
+      "songurl": "./songs/Soulmate.mp3",
+      "id": "405b"
     },
     {
       "name": "O Sajni Re",
@@ -31,7 +33,8 @@
       "category": "Laapataa Ladies - 2024",
       "duration": "2:50",
       "genre": "Unknown",
-      "songurl": "./songs/O Sajni Re.mp3"
+      "songurl": "./songs/O Sajni Re.mp3",
+      "id": "3a5a"
     },
     {
       "name": "Gulabi Sadi Ani Lali",
@@ -42,7 +45,8 @@
       "category": "New Viral Songs 2024",
       "duration": "3:45",
       "genre": "Unknown",
-      "songurl": "./songs/Gulabi Sadi Ani Lali.mp3"
+      "songurl": "./songs/Gulabi Sadi Ani Lali.mp3",
+      "id": "bf7b"
     },
     {
       "name": "Heeriye",
@@ -53,7 +57,8 @@
       "category": "New Hindi Songs 2023",
       "duration": "3:19",
       "genre": "Unknown",
-      "songurl": "./songs/Heeriye.mp3"
+      "songurl": "./songs/Heeriye.mp3",
+      "id": "f5a2"
     },
     {
       "name": "Ve Haniya",
@@ -64,7 +69,8 @@
       "category": "New Viral Songs 2024",
       "duration": "4:00",
       "genre": "Unknown",
-      "songurl": "./songs/Ve Haniya.mp3"
+      "songurl": "./songs/Ve Haniya.mp3",
+      "id": "9f24"
     },
     {
       "name": "Maan Meri Jaan",
@@ -75,7 +81,8 @@
       "category": "New Hindi Songs 2022",
       "duration": "3:15",
       "genre": "Unknown",
-      "songurl": "./songs/Maan Meri Jaan.mp3"
+      "songurl": "./songs/Maan Meri Jaan.mp3",
+      "id": "00c8"
     },
     {
       "name": "Tu Hai Kahan",
@@ -86,7 +93,8 @@
       "category": "New Hindi Songs 2023",
       "duration": "4:23",
       "genre": "Unknown",
-      "songurl": "./songs/Tu Hai Kahan.mp3"
+      "songurl": "./songs/Tu Hai Kahan.mp3",
+      "id": "2ae2"
     },
     {
       "name": "Husn Tera Tauba Tauba",
@@ -97,7 +105,8 @@
       "category": "New Viral Songs 2024",
       "duration": "3:27",
       "genre": "Unknown",
-      "songurl": "./songs/Husn Tera Tauba Tauba.mp3"
+      "songurl": "./songs/Husn Tera Tauba Tauba.mp3",
+      "id": "3389"
     },
     {
       "name": "Guli Mata",
@@ -108,7 +117,8 @@
       "category": "New Hindi Songs 2023",
       "duration": "3:56",
       "genre": "Unknown",
-      "songurl": "./songs/Guli Mata.mp3"
+      "songurl": "./songs/Guli Mata.mp3",
+      "id": "5d3f"
     },
     {
       "name": "Dekha Tenu Pehli Pehli Baar Ve",
@@ -119,7 +129,8 @@
       "category": "New Viral Songs 2024",
       "duration": "4:42",
       "genre": "Unknown",
-      "songurl": "./songs/Dekha Tenu Pehli Pehli Baar Ve.mp3"
+      "songurl": "./songs/Dekha Tenu Pehli Pehli Baar Ve.mp3",
+      "id": "7607"
     },
     {
       "name": "Ram Siya Ram",
@@ -130,7 +141,8 @@
       "category": "Adipurush (2023)",
       "duration": "3:50",
       "genre": "Unknown",
-      "songurl": "./songs/Ram Siya Ram.mp3"
+      "songurl": "./songs/Ram Siya Ram.mp3",
+      "id": "e923"
     },
     {
       "name": "Tere Hawaale",
@@ -141,7 +153,8 @@
       "category": "Laal Singh Chaddha (2022)",
       "duration": "5:50",
       "genre": "Unknown",
-      "songurl": "./songs/Tere Hawaale.mp3"
+      "songurl": "./songs/Tere Hawaale.mp3",
+      "id": "895a"
     },
     {
       "name": "Chaleya",
@@ -152,7 +165,8 @@
       "category": "Jawan (2023)",
       "duration": "3:08",
       "genre": "Unknown",
-      "songurl": "./songs/Chaleya.mp3"
+      "songurl": "./songs/Chaleya.mp3",
+      "id": "fe51"
     },
     {
       "name": "Teri Baaton Mein Aisa Uljha Jiya",
@@ -163,7 +177,8 @@
       "category": "Teri Baaton Mein Aisa Uljha Jiya (2024)",
       "duration": "2:32",
       "genre": "Unknown",
-      "songurl": "./songs/Teri Baaton Mein Aisa Uljha Jiya.mp3"
+      "songurl": "./songs/Teri Baaton Mein Aisa Uljha Jiya.mp3",
+      "id": "fb62"
     },
     {
       "name": "Yimmy Yimmy",
@@ -174,7 +189,8 @@
       "category": "New Hindi Songs 2024",
       "duration": "3:32",
       "genre": "Unknown",
-      "songurl": "./songs/Yimmy Yimmy.mp3"
+      "songurl": "./songs/Yimmy Yimmy.mp3",
+      "id": "183b"
     },
     {
       "name": "Kahani Suno",
@@ -185,7 +201,8 @@
       "category": "New Viral Songs 2023",
       "duration": "2:54",
       "genre": "Unknown",
-      "songurl": "./songs/Kahani Suno.mp3"
+      "songurl": "./songs/Kahani Suno.mp3",
+      "id": "aa96"
     },
     {
       "name": "Pehle Bhi Main",
@@ -196,7 +213,8 @@
       "category": "Animal (2023)",
       "duration": "4:10",
       "genre": "Unknown",
-      "songurl": "./songs/Pehle Bhi Main.mp3"
+      "songurl": "./songs/Pehle Bhi Main.mp3",
+      "id": "9775"
     },
     {
       "name": "Mere Mehboob Mere Sanam",
@@ -207,7 +225,8 @@
       "category": "Bad Newz - 2024",
       "duration": "3:02",
       "genre": "Unknown",
-      "songurl": "./songs/Mere Mehboob Mere Sanam.mp3"
+      "songurl": "./songs/Mere Mehboob Mere Sanam.mp3",
+      "id": "205c"
     },
     {
       "name": "Paon Ki Jutti",
@@ -218,7 +237,8 @@
       "category": "New Hindi Songs 2024",
       "duration": "3:29",
       "genre": "Unknown",
-      "songurl": "./songs/Paon Ki Jutti.mp3"
+      "songurl": "./songs/Paon Ki Jutti.mp3",
+      "id": "85ce"
     },
     {
       "name": "Rabb Warga",
@@ -229,7 +249,8 @@
       "category": "Bad Newz - 2024",
       "duration": "2:51",
       "genre": "Unknown",
-      "songurl": "./songs/Rabb Warga.mp3"
+      "songurl": "./songs/Rabb Warga.mp3",
+      "id": "3119"
     },
     {
       "name": "Meethi Boliyaan",
@@ -240,10 +261,10 @@
       "category": "New Hindi Songs 2024",
       "duration": "2:29",
       "genre": "Unknown",
-      "songurl": "./songs/Meethi Boliyaan.mp3"
+      "songurl": "./songs/Meethi Boliyaan.mp3",
+      "id": "8c98"
     }
-  ]
-  ,
+  ],
   "user": [
     {
       "id": "1",
@@ -298,6 +319,16 @@
       "date": "06",
       "gender": "Man",
       "id": "hkzh5VF"
+    },
+    {
+      "id": "c1f4",
+      "email": "dc@gmail.com",
+      "password": "1234@q1234",
+      "name": "Chomu",
+      "year": "2022",
+      "month": "January",
+      "date": "6",
+      "gender": "Male"
     }
   ]
 }

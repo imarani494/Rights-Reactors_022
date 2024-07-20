@@ -1,11 +1,10 @@
 
 
-let form=document.querySelector("form");
+let form = document.querySelector("form");
 
-form.addEventListener("submit", (event)=>{addData(event)});
+form.addEventListener("submit", (event) => { addData(event) });
 
-function addData (event){
-
+async function addData(event) {
   event.preventDefault();
 
   let email = document.getElementById("email").value;
@@ -15,22 +14,34 @@ function addData (event){
   let month = document.getElementById("month").value;
   let date = document.getElementById("date").value;
   let gender = document.getElementById("gendertype").value;
-    
 
-    let obj={
-      email , password , name , year , month , date , gender
-    }
+  let obj = {
+    email, password, name, year, month, date, gender
+  }
 
-    fetch(`http://localhost:3000/user`,{
-
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
-  headers: {
-    "Content-Type": "application/json",
+  try {
+    let response = await fetch(`http://localhost:3000/user`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-  body:JSON.stringify(obj), // body data type must match "Content-Type" header
-})
-  
+      body: JSON.stringify(obj),
+    });
+
+    if (response.ok) {
+      let data = await response.json();
+      console.log("Success:", data);
+      // You can add further actions here, like redirecting the user or displaying a success message
+    } else {
+      console.error("Error:", response.statusText);
+      // Handle error response here
+    }
+  } catch (error) {
+    console.error("Fetch error:", error);
+    // Handle fetch error here
+  }
 }
+
 
 
 
@@ -85,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
 let email = document.querySelector("#email");
 let nextbut = document.querySelector("#submitbut");
 let nextbut2=document.querySelector("#submitbut2");
-let nextbut3=document.querySelector("#submitbut3");
+
 let name = document.querySelector("#name");
 
 
@@ -122,34 +133,11 @@ function checkNext2(password) {
   }
 }
 
-nextbut3.addEventListener("click", function() {
-  checkNext3(name.value);
 });
 
-function checkNext3(name) {
-  if (name.length >= 3) {
-    let carousel = new bootstrap.Carousel(document.querySelector('#carouselExample'), {
-      interval: false
-    });
-    carousel.next();
-  }
-  else{
-    alert("please Enter your Data")
-  }
-}
+let signupbut=document.querySelector("#Signupbut");
 
-});
-
-
-
-// Get the sign-up button element
-let signupbut = document.querySelector("#signupbut");
-
-// Add click event listener to the sign-up button
-signupbut.addEventListener("click", () => {
-    // Show alert message
-    alert("Thank You for Sign Up");
-
-    // Redirect to the index.html page after the alert is dismissed
-    window.location.href = 'index.html';
-});
+signupbut.addEventListener("click",()=>{
+alert("Thank You for Sign Up")
+window.location.href="../Login/login.html";
+})
