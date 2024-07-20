@@ -1,0 +1,318 @@
+{
+  "songs": [
+    {
+      "name": "O Mahi O Mahi",
+      "artist": "Arijit Singh",
+      "songposterurl": "./logos/O-Mahi-O-Mahi.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Viral Songs 2024",
+      "duration": "3:54",
+      "genre": "Unknown",
+      "songurl": "./songs/O Mahi O Mahi.mp3"
+    },
+    {
+      "name": "Soulmate",
+      "artist": "Badshah, Arijit Singh",
+      "songposterurl": "./logos/Soulmate.jpg",
+      "album": "Ek Tha Raja (2024)",
+      "language": "Hindi",
+      "category": "Ek Tha Raja (2024)",
+      "duration": "3:34",
+      "genre": "Unknown",
+      "songurl": "./songs/Soulmate.mp3"
+    },
+    {
+      "name": "O Sajni Re",
+      "artist": "Arijit Singh",
+      "songposterurl": "./logos/O-Sajni-Re.jpg",
+      "album": "Laapataa Ladies - 2024",
+      "language": "Hindi",
+      "category": "Laapataa Ladies - 2024",
+      "duration": "2:50",
+      "genre": "Unknown",
+      "songurl": "./songs/O Sajni Re.mp3"
+    },
+    {
+      "name": "Gulabi Sadi Ani Lali",
+      "artist": "Sanju Rathod",
+      "songposterurl": "./logos/Gulabi-Sadi-Ani-Lali.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Viral Songs 2024",
+      "duration": "3:45",
+      "genre": "Unknown",
+      "songurl": "./songs/Gulabi Sadi Ani Lali.mp3"
+    },
+    {
+      "name": "Heeriye",
+      "artist": "Jasleen Royal, Arijit Singh",
+      "songposterurl": "./logos/Heeriye.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Hindi Songs 2023",
+      "duration": "3:19",
+      "genre": "Unknown",
+      "songurl": "./songs/Heeriye.mp3"
+    },
+    {
+      "name": "Ve Haniya",
+      "artist": "Danny",
+      "songposterurl": "./logos/Ve-Haniya.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Viral Songs 2024",
+      "duration": "4:00",
+      "genre": "Unknown",
+      "songurl": "./songs/Ve Haniya.mp3"
+    },
+    {
+      "name": "Maan Meri Jaan",
+      "artist": "King",
+      "songposterurl": "./logos/Maan-Meri-Jaan.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Hindi Songs 2022",
+      "duration": "3:15",
+      "genre": "Unknown",
+      "songurl": "./songs/Maan Meri Jaan.mp3"
+    },
+    {
+      "name": "Tu Hai Kahan",
+      "artist": "Aur",
+      "songposterurl": "./logos/Tu-Hai-Kahan.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Hindi Songs 2023",
+      "duration": "4:23",
+      "genre": "Unknown",
+      "songurl": "./songs/Tu Hai Kahan.mp3"
+    },
+    {
+      "name": "Husn Tera Tauba Tauba",
+      "artist": "Karan Aujla",
+      "songposterurl": "./logos/Husn-Tera-Tauba-Tauba.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Viral Songs 2024",
+      "duration": "3:27",
+      "genre": "Unknown",
+      "songurl": "./songs/Husn Tera Tauba Tauba.mp3"
+    },
+    {
+      "name": "Guli Mata",
+      "artist": "Saad Lamjarred, Shreya Ghoshal",
+      "songposterurl": "./logos/Guli-Mata.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Hindi Songs 2023",
+      "duration": "3:56",
+      "genre": "Unknown",
+      "songurl": "./songs/Guli Mata.mp3"
+    },
+    {
+      "name": "Dekha Tenu Pehli Pehli Baar Ve",
+      "artist": "Mohammad Faiz",
+      "songposterurl": "./logos/Dekha-Tenu-Pehli-Pehli-Baar-Ve.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Viral Songs 2024",
+      "duration": "4:42",
+      "genre": "Unknown",
+      "songurl": "./songs/Dekha Tenu Pehli Pehli Baar Ve.mp3"
+    },
+    {
+      "name": "Ram Siya Ram",
+      "artist": "Sachet Tandon, Parampara Tandon",
+      "songposterurl": "./logos/Ram-Siya-Ram.jpg",
+      "album": "Adipurush (2023)",
+      "language": "Hindi",
+      "category": "Adipurush (2023)",
+      "duration": "3:50",
+      "genre": "Unknown",
+      "songurl": "./songs/Ram Siya Ram.mp3"
+    },
+    {
+      "name": "Tere Hawaale",
+      "artist": "Arijit Singh, Shilpa Rao",
+      "songposterurl": "./logos/Tere-Hawaale.jpg",
+      "album": "Laal Singh Chaddha (2022)",
+      "language": "Hindi",
+      "category": "Laal Singh Chaddha (2022)",
+      "duration": "5:50",
+      "genre": "Unknown",
+      "songurl": "./songs/Tere Hawaale.mp3"
+    },
+    {
+      "name": "Chaleya",
+      "artist": "Arijit Singh, Shilpa Rao",
+      "songposterurl": "./logos/Chaleya.jpg",
+      "album": "Jawan (2023)",
+      "language": "Hindi",
+      "category": "Jawan (2023)",
+      "duration": "3:08",
+      "genre": "Unknown",
+      "songurl": "./songs/Chaleya.mp3"
+    },
+    {
+      "name": "Teri Baaton Mein Aisa Uljha Jiya",
+      "artist": "Raghav, Asees Kaur",
+      "songposterurl": "./logos/Teri-Baaton-Mein-Aisa-Uljha-Jiya.jpg",
+      "album": "Teri Baaton Mein Aisa Uljha Jiya (2024)",
+      "language": "Hindi",
+      "category": "Teri Baaton Mein Aisa Uljha Jiya (2024)",
+      "duration": "2:32",
+      "genre": "Unknown",
+      "songurl": "./songs/Teri Baaton Mein Aisa Uljha Jiya.mp3"
+    },
+    {
+      "name": "Yimmy Yimmy",
+      "artist": "Tayc, Shreya Ghoshal",
+      "songposterurl": "./logos/Yimmy-Yimmy.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Hindi Songs 2024",
+      "duration": "3:32",
+      "genre": "Unknown",
+      "songurl": "./songs/Yimmy Yimmy.mp3"
+    },
+    {
+      "name": "Kahani Suno",
+      "artist": "Kaifi Khalil",
+      "songposterurl": "./logos/Kahani-Suno.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Viral Songs 2023",
+      "duration": "2:54",
+      "genre": "Unknown",
+      "songurl": "./songs/Kahani Suno.mp3"
+    },
+    {
+      "name": "Pehle Bhi Main",
+      "artist": "Vishal Mishra",
+      "songposterurl": "./logos/Pehle-Bhi-Main.jpg",
+      "album": "Animal (2023)",
+      "language": "Hindi",
+      "category": "Animal (2023)",
+      "duration": "4:10",
+      "genre": "Unknown",
+      "songurl": "./songs/Pehle Bhi Main.mp3"
+    },
+    {
+      "name": "Mere Mehboob Mere Sanam",
+      "artist": "Udit Narayan, Alka Yagnik",
+      "songposterurl": "./logos/Mere-Mehboob-Mere-Sanam.jpg",
+      "album": "Bad Newz - 2024",
+      "language": "Hindi",
+      "category": "Bad Newz - 2024",
+      "duration": "3:02",
+      "genre": "Unknown",
+      "songurl": "./songs/Mere Mehboob Mere Sanam.mp3"
+    },
+    {
+      "name": "Paon Ki Jutti",
+      "artist": "Jyoti Nooran",
+      "songposterurl": "./logos/Paon-Ki-Jutti.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Hindi Songs 2024",
+      "duration": "3:29",
+      "genre": "Unknown",
+      "songurl": "./songs/Paon Ki Jutti.mp3"
+    },
+    {
+      "name": "Rabb Warga",
+      "artist": "Neeti Mohan",
+      "songposterurl": "./logos/Rabb-Warga.jpg",
+      "album": "Bad Newz - 2024",
+      "language": "Hindi",
+      "category": "Bad Newz - 2024",
+      "duration": "2:51",
+      "genre": "Unknown",
+      "songurl": "./songs/Rabb Warga.mp3"
+    },
+    {
+      "name": "Meethi Boliyaan",
+      "artist": "Javed Ali",
+      "songposterurl": "./logos/Meethi-Boliyaan.jpg",
+      "album": "Unknown",
+      "language": "Hindi",
+      "category": "New Hindi Songs 2024",
+      "duration": "2:29",
+      "genre": "Unknown",
+      "songurl": "./songs/Meethi Boliyaan.mp3"
+    }
+
+  "user": [
+    {
+      "id": "1",
+      "email": "omshre06@gmail.com",
+      "password": "omsh2003@",
+      "name": "om shrestha",
+      "DOB": "2003-01-06",
+      "gender": "male"
+    },
+    {
+      "id": "2",
+      "email": "rakeah33@gmail.com",
+      "password": "rakesh33@",
+      "name": "Rakesh Roshan",
+      "DOB": "2000-05-07",
+      "gender": "male"
+    },
+    {
+      "id": "3",
+      "email": "punam10@gmail.com",
+      "password": "punam234@",
+      "name": "punam tripathi",
+      "DOB": "2003-01-10",
+      "gender": "female"
+    },
+    {
+      "email": "rohitsena33@gmail.com",
+      "password": "rohitsh2007@",
+      "name": "Rohit Sena",
+      "year": "2003",
+      "month": "February",
+      "date": "21",
+      "gender": "Man",
+      "id": "bKawgAu"
+    },
+    {
+      "email": "rajatkumar34@gmail.com",
+      "password": "raja22003@",
+      "name": "Rohit Sena",
+      "year": "2004",
+      "month": "March",
+      "date": "12",
+      "gender": "Man",
+      "id": "v_K32hZ"
+    },
+    {
+      "email": "saradarana05@gmail.com",
+      "password": "omshrestha234r3",
+      "name": "Om Shrestha",
+      "year": "2003",
+      "month": "March",
+      "date": "06",
+      "gender": "Man",
+      "id": "hkzh5VF"
+
+    },
+    {
+      "email": "ranjan077@gmail.com",
+      "password": "ranjan@5555",
+      "name": "Ranjan Ramesh",
+      "year": "2004",
+      "month": "June",
+      "date": "01",
+      "gender": "Male",
+      "id": "2BkA-cs"
+    }
+  ]
+}
+
+    }
+  ]
+}
+
