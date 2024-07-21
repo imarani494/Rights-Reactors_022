@@ -2,6 +2,46 @@ const music = new Audio('vande.mp3');
 
 // create Array 
 
+
+
+// Check if the redirect has already occurred
+if (!sessionStorage.getItem('redirected')) {
+    // Set a timeout to redirect after 5 seconds
+    let timeoutId = setTimeout(() => {
+        // Set a flag in sessionStorage to indicate the redirect has occurred
+        
+        window.location.href = "./signup/signup.html";
+    }, 10000);
+}
+
+
+function hideButtonsIfLoggedIn() {
+    if (localStorage.getItem('loggedIn') === 'true') {
+        document.getElementById('Loginbut').style.display = 'none';
+        document.getElementById('Signupbut').style.display = 'none';
+        document.getElementById('logout').style.display = 'block';
+    } else {
+        document.getElementById('Loginbut').style.display = 'inline';
+        document.getElementById('Signupbut').style.display = 'inline';
+        document.getElementById('logout').style.display = 'none';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', hideButtonsIfLoggedIn);
+
+document.addEventListener('DOMContentLoaded', () => {
+    let logout = document.getElementById('logout');
+    logout.addEventListener('click', () => {
+        localStorage.setItem('loggedIn', 'false');
+        sessionStorage.setItem('redirected', 'false');
+        window.location.href = './Login/login.html';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', hideButtonsIfLoggedIn);
+
+
+
 const songs = [
     {
         id:'1',
