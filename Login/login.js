@@ -21,7 +21,7 @@ async function checkdata(event) {
         showdata(narr)
     }
     catch (error) {
-      alert("error")
+      alert("Invalid credentials")
     }
   }
   

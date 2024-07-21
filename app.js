@@ -348,6 +348,12 @@ document.addEventListener('DOMContentLoaded', () => {
 const API_URL = "http://localhost:3000/songs";
 const searchInput = document.getElementById("search-input");
 const resultsContainer = document.getElementById("results");
+// day6manish
+const audioPlayer = document.createElement("audio");
+        audioPlayer.id = "audio-player";
+        audioPlayer.style.display = "none";
+        document.body.appendChild(audioPlayer);
+// day6manish
 let debounceTimeout;
 searchInput.addEventListener("input", () => {
   clearTimeout(debounceTimeout);
@@ -377,21 +383,199 @@ async function fetchSongs(query) {
     resultsContainer.innerHTML = `<p>Error fetching data</p>`;
   }
 }
+/* manishday6 */
 function displayResults(songs) {
     resultsContainer.innerHTML = "";
-    songs.forEach((song) => {
+    songs.forEach((song, index) => {
       const songDiv = document.createElement("div");
       songDiv.classList.add("song-title");
       songDiv.style.cursor = "pointer";
       songDiv.textContent = song.name;
       songDiv.addEventListener("click", () => {
-        //put the song display function
         resultsContainer.innerHTML = "";
-        alert(`${song.name} selected`);
+        showSongPopup(song);
       });
       resultsContainer.appendChild(songDiv);
     });
   }
+/* manishday5 */
+  function showSongPopup(song) {
+    // Create popup elements
+    const popupOverlay = document.createElement("div");
+    popupOverlay.classList.add("popup-overlay");
+    const popup = document.createElement("div");
+    popup.classList.add("popup");
+    const songTitle = document.createElement("h2");
+    songTitle.textContent = song.name;
+    const songArtist = document.createElement("p");
+    songArtist.innerHTML = `<strong>Artist:</strong> ${song.artist}`;
+    const songAlbum = document.createElement("p");
+    songAlbum.innerHTML = `<strong>Album:</strong> ${song.album}`;
+    const songLanguage = document.createElement("p");
+    songLanguage.innerHTML = `<strong>Language:</strong> ${song.language}`;
+    const songCategory = document.createElement("p");
+    songCategory.innerHTML = `<strong>Category:</strong> ${song.category}`;
+    const songDuration = document.createElement("p");
+    songDuration.innerHTML = `<strong>Duration:</strong> ${song.duration}`;
+    const songGenre = document.createElement("p");
+    songGenre.innerHTML = `<strong>Genre:</strong> ${song.genre}`;
+    const songPoster = document.createElement("img");
+    songPoster.src = song.songposterurl;
+    songPoster.alt = song.name;
+    const playButton = document.createElement("button");
+    playButton.textContent = "Play";
+    playButton.addEventListener("click", () => {
+      
+      showMusicPlayer(song);
+      document.body.removeChild(popupOverlay);
+    });
+    const closeButton = document.createElement("button");
+    closeButton.textContent = "Close";
+    closeButton.addEventListener("click", () => {
+      document.body.removeChild(popupOverlay);
+    });
+    // Append elements to popup
+    popup.appendChild(songTitle);
+    popup.appendChild(songArtist);
+    popup.appendChild(songAlbum);
+    popup.appendChild(songLanguage);
+    popup.appendChild(songCategory);
+    popup.appendChild(songDuration);
+    popup.appendChild(songGenre);
+    popup.appendChild(songPoster);
+    popup.appendChild(playButton);
+    popup.appendChild(closeButton);
+    // Append popup to overlay
+    popupOverlay.appendChild(popup);
+    // Append overlay to body
+    document.body.appendChild(popupOverlay);
+  }
+  function showMusicPlayer(song) {
+// Remove existing popup if any
+const existingPopup = document.getElementById("music-player-popup");
+if (existingPopup) {
+existingPopup.remove();
+}
+// Create overlay
+const overlay = document.createElement("div");
+overlay.id = "music-player-popup";
+overlay.className = "popup-overlay";
+// Create popup container
+const popup = document.createElement("div");
+popup.className = "popup";
+// Close button
+const closeButton = document.createElement("button");
+closeButton.textContent = "X";
+closeButton.className = "popup-close";
+closeButton.addEventListener("click", () => {
+// Stop and clear the audio player
+audioPlayer.pause();
+audioPlayer.src = "";
+document.body.removeChild(overlay);
+});
+// Music player UI elements
+const songImage = document.createElement("img");
+songImage.src = song.songposterurl;
+songImage.alt = song.name;
+const songName = document.createElement("h2");
+songName.textContent = song.name;
+const songArtist = document.createElement("p");
+songArtist.innerHTML = `<strong>Artist:</strong> ${song.artist}`;
+const playerControls = document.createElement("div");
+playerControls.className = "controls";
+const playPauseButton = document.createElement("i");
+playPauseButton.className = "bi bi-pause";
+playPauseButton.addEventListener("click", () => {
+if (audioPlayer.paused) {
+audioPlayer.play();
+playPauseButton.className = "bi bi-pause";
+} else {
+audioPlayer.pause();
+playPauseButton.className = "bi bi-play";
+}
+});
+const prevButton = document.createElement("i");
+prevButton.className = "bi bi-skip-backward";
+prevButton.addEventListener("click", () => {
+currentSongIndex = (currentSongIndex - 1 + songsList.length) % songsList.length;
+playSong(songsList[currentSongIndex]);
+});
+const nextButton = document.createElement("i");
+nextButton.className = "bi bi-skip-forward";
+nextButton.addEventListener("click", () => {
+currentSongIndex = (currentSongIndex + 1) % songsList.length;
+playSong(songsList[currentSongIndex]);
+});
+playerControls.appendChild(prevButton);
+playerControls.appendChild(playPauseButton);
+playerControls.appendChild(nextButton);
+// Create progress bar
+const progressBar = document.createElement("div");
+progressBar.className = "progress-bar";
+const progress = document.createElement("div");
+progress.className = "progress";
+const progressHandle = document.createElement("div");
+progressHandle.className = "progress-handle";
+progressBar.appendChild(progress);
+progressBar.appendChild(progressHandle);
+// Update progress bar
+audioPlayer.addEventListener("timeupdate", () => {
+const progressPercent = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+progress.style.width = `${progressPercent}%`;
+progressHandle.style.left = `${progressPercent}%`;
+});
+progressHandle.addEventListener("mousedown", (event) => {
+const onMouseMove = (e) => {
+const rect = progressBar.getBoundingClientRect();
+const x = e.clientX - rect.left;
+const percent = Math.min(Math.max(x / rect.width, 0), 1);
+audioPlayer.currentTime = percent * audioPlayer.duration;
+progress.style.width = `${percent * 100}%`;
+progressHandle.style.left = `${percent * 100}%`;
+};
+document.addEventListener("mousemove", onMouseMove);
+document.addEventListener("mouseup", () => {
+document.removeEventListener("mousemove", onMouseMove);
+});
+});
+// Create volume control
+const volumeControl = document.createElement("div");
+volumeControl.className = "volume-control";
+const volumeLabel = document.createElement("span");
+volumeLabel.textContent = "Volume:";
+const volumeInput = document.createElement("input");
+volumeInput.type = "range";
+volumeInput.min = "0";
+volumeInput.max = "1";
+volumeInput.step = "0.1";
+volumeInput.value = "1";
+volumeInput.addEventListener("input", () => {
+audioPlayer.volume = volumeInput.value;
+});
+volumeControl.appendChild(volumeLabel);
+volumeControl.appendChild(volumeInput);
+// Set up audio player
+function playSong(song) {
+audioPlayer.src = song.songurl;
+audioPlayer.play();
+document.querySelector(".popup h2").textContent = song.name;
+document.querySelector(".popup img").src = song.songposterurl;
+}
+playSong(song);
+// Append elements to popup
+popup.appendChild(closeButton);
+popup.appendChild(songImage);
+popup.appendChild(songName);
+popup.appendChild(songArtist);
+popup.appendChild(playerControls);
+popup.appendChild(progressBar);
+popup.appendChild(volumeControl);
+// Append popup to overlay
+overlay.appendChild(popup);
+// Append overlay to body
+document.body.appendChild(overlay);
+}
+  /* manishday6 */
   
   
 // <!-- manish day4 -->
