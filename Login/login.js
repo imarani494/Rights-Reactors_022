@@ -28,6 +28,8 @@ async function checkdata(event) {
   function showdata(arr){
     if(arr.length!=0){
       alert("login Successful")
+      sessionStorage.setItem('redirected', 'true');
+      localStorage.setItem('loggedIn', 'true');
       window.location.href="../index.html";
     }
     else{
