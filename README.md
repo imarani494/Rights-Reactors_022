@@ -85,12 +85,23 @@ open with live server
 -Master Player: here you have option to play songs randomly or you sequence wise.</br>
 -Logout : redirect to LogIn.
 
-Include screenshots as necessary.
+![SignUp screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/develope/Website-images/Signup.jpg)
+
+
+![Login screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/develope/Website-images/login.jpg)
+
+
+![landing page screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/develope/Website-images/Landing-page.jpg)
+
+
+![Music player screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/develope/Website-images/music%20player.jpg)
+
+
 
 
 ## Credentials
     User LogIn: 
-    Email:rajatkumar34@gmail.com
+    Email:omshreshtha34@gmail.com
     Password: raja22003@
 
 
