@@ -619,3 +619,54 @@ header .song_side .popular_artists .item li img{
     border-radius: 5px;
   }
 /* manishday4 */
+@media (max-width: 768px) {
+    .menu_side {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .song_side {
+        flex: 1 1 100%;
+    }
+
+    .search input {
+        width: 150px;
+    }
+
+    .buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .popular_song .pop_song, .popular_artists .item {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu_song li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu_song li img {
+        margin-bottom: 10px;
+    }
+
+    .popular_song .pop_song li, .popular_artists .item li {
+        flex: 0 0 100px;
+    }
+
+    .master_play {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .master_play .bar, .master_play .vol {
+        width: 100%;
+    }
+
+    .master_play .bar {
+        margin: 10px 0;
+    }
+}

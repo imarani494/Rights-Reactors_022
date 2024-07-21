@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Songs</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#111727;
+        }
+
+        .playlist {
+            text-align: center;
+            padding: 20px;
+            background-color:#111727;
+            color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .playlist h4 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .add-all-button, .backup-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .add-all-button {
+            background-color: #ff4081;
+        }
+
+        .add-all-button:hover {
+            background-color: #e03071;
+        }
+
+        .backup-button {
+            background-color: #007bff;
+        }
+
+        .backup-button:hover {
+            background-color: #0056b3;
+        }
+
+        .playlist-songs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .songItem {
+            background-color: #1e2137;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .songItem:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .songItem img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .songItem div {
+            padding: 15px;
+        }
+
+        .songItem h5 {
+            font-size: 16px;
+            margin: 0;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .songItem .subtitle {
+            font-size: 14px;
+            color: #bbb;
+            margin-top: 5px;
+        }
+
+        .play-song-button {
+            margin-top: 10px;
+            padding: 5px 15px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .play-song-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        audio {
+            width: 100%;
+            background-color: #1e2137;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .songItem {
+                width: 180px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .songItem {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="playlist">
+       <h4><span></span><i class="bi bi-music-note-beamed"></i> Playlist</h4>
+        <button class="add-all-button" id="showAddButton">+</button>
+        <button class="backup-button" id="backupButton">-</button>
+    </div> 
+    <div class="playlist-songs" id="playlistSongs">
+        <audio id="audio" controls></audio>
+    </div>
+    
+    <script>
+        const songs = [
+            { id: '1', songName: `On My Way <br><div class="subtitle">Alan Walker</div>`, poster: "./img/Diljit_Dosanjh.jpg", file: "./audio/11.mp3" },
+            { id: '2', songName: `Alan Walker-Fade <br><div class="subtitle">Alan Walker</div>`, poster: "./img/2.jpg", file: "./audio/2.mp3" },
+            { id: "3", songName: `Cartoon - On & On <br><div class="subtitle"> Daniel Levi</div>`, poster: "./img/5.jpg", file: "./audio/3.mp3" },
+            { id: "4", songName: `Warriyo - Mortals <br><div class="subtitle">Mortals</div>`, poster: "./img/10.jpg", file: "./audio/4.mp3" },
+            { id: "5", songName: `Ertugrul Gazi <br><div class="subtitle">Ertugrul</div>`, poster: "./img/5.jpg", file: "./audio/5.mp3" },
+            { id: "6", songName: `Electronic Music <br><div class="subtitle">Electro</div>`, poster: "./img/alan.jpg", file: "./audio/6.mp3" },
+            { id: "7", songName: `Agar Tum Sath Ho <br><div class="subtitle">Tamashaa</div>`, poster: "./img/12.jpg", file: "./audio/7.mp3" },
+            { id: "8", songName: `Suna Hai <br><div class="subtitle">Neha Kakker</div>`, poster: "./img/8.jpg", file: "./audio/8.mp3" },
+            { id: "9", songName: `Dilber <br><div class="subtitle">Satyameva Jayate</div>`, poster: "./img/9.jpg", file: "./audio/9.mp3" },
+            { id: "10", songName: `Duniya <br><div class="subtitle">Luka Chuppi</div>`, poster: "./img/10.jpg", file: "./audio/10.mp3" }
+        ];
+
+        let songIndex = 0;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const playlistSongsContainer = document.getElementById('playlistSongs');
+            const showAddButton = document.getElementById('showAddButton');
+            const backupButton = document.getElementById('backupButton');
+            const audioPlayer = document.getElementById('audio');
+
+            const displaySong = () => {
+                if (songIndex >= songs.length) {
+                    alert('All songs have been added.');
+                    return;
+                }
+
+                const song = songs[songIndex];
+                const songItem = document.createElement('div');
+                songItem.classList.add('songItem');
+                songItem.dataset.id = song.id;
+
+                const songImage = document.createElement('img');
+                songImage.src = song.poster;
+                songImage.alt = song.songName;
+
+                const songDetails = document.createElement('div');
+                songDetails.innerHTML = `<h5>${song.songName}</h5>`;
+
+                const playButton = document.createElement('button');
+                playButton.classList.add('play-song-button');
+                playButton.textContent = 'Play';
+                playButton.addEventListener('click', () => {
+                    playSong(song.file);
+                });
+
+                songItem.appendChild(songImage);
+                songItem.appendChild(songDetails);
+                songItem.appendChild(playButton);
+                playlistSongsContainer.appendChild(songItem);
+
+                songIndex++;
+            };
+
+            const playSong = (file) => {
+                audioPlayer.src = file;
+                audioPlayer.play();
+            };
+
+            const removeLastSong = () => {
+                const lastSongItem = playlistSongsContainer.lastElementChild;
+                if (lastSongItem) {
+                    playlistSongsContainer.removeChild(lastSongItem);
+                    songIndex--; // Adjust index if needed
+                }
+            };
+
+            showAddButton.addEventListener('click', displaySong);
+            backupButton.addEventListener('click', removeLastSong);
+        });
+    </script>
+</body>
+</html>
