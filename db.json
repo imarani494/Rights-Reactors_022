@@ -319,7 +319,26 @@
       "date": "06",
       "gender": "Man",
       "id": "hkzh5VF"
+    },
+    {
+      "id": "ccd0",
+      "email": "dc@gmail.com",
+      "password": "Masai@1234",
+      "name": "Dhan",
+      "year": "2022",
+      "month": "March",
+      "date": "8",
+      "gender": "Male"
+    },
+    {
+      "id": "37ee",
+      "email": "dc@gmail.com",
+      "password": "Masai@1234",
+      "name": "Dhan",
+      "year": "2023",
+      "month": "April",
+      "date": "3",
+      "gender": "Male"
     }
-    
   ]
 }
