@@ -85,16 +85,16 @@ open with live server
 -Master Player: here you have option to play songs randomly or you sequence wise.</br>
 -Logout : redirect to LogIn.
 
-![SignUp screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/develope/Website-images/Signup.jpg)
+![SignUp screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/Main/Website-images/Signup.jpg)
 
 
-![Login screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/develope/Website-images/login.jpg)
+![Login screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/Main/Website-images/login.jpg)
 
 
-![landing page screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/develope/Website-images/Landing-page.jpg)
+![landing page screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/Main/Website-images/Landing-page.jpg)
 
 
-![Music player screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/develope/Website-images/music%20player.jpg)
+![Music player screenshoot](https://github.com/imarani494/Rights-Reactors_022/blob/Main/Website-images/music%20player.jpg)
 
 
 
