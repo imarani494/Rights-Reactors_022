@@ -54,7 +54,7 @@ Database: [Json server](https://mock-api-fxby.onrender.com/)
   </pre>
 
 ## Video Walkthrough of the project
-Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
+[![Video](http://img.youtube.com/vi/QMCR54zTQz8/0.jpg)](http://www.youtube.com/watch?v=QMCR54zTQz8)
 
 ## Video Walkthrough of the codebase
 Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
