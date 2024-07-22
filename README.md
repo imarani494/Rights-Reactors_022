@@ -56,8 +56,6 @@ Database: [Json server](https://mock-api-fxby.onrender.com/)
 ## Video Walkthrough of the project
 [![Video](http://img.youtube.com/vi/QMCR54zTQz8/0.jpg)](http://www.youtube.com/watch?v=QMCR54zTQz8)
 
-## Video Walkthrough of the codebase
-Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 
 ## Features
 List out the key features of your application.
